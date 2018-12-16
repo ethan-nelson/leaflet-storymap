@@ -1,0 +1,23 @@
+#wrapper {
+  width: 100%;
+}
+#map {
+  float: left;
+  width: 80%;
+  height: 800px;
+  box-sizing: border-box;
+}
+#storyWrapper {
+  float: right;
+  width: 20%;
+  height: 800px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#storyContainer {
+  overflow-y: scroll;
+  height: 85%;
+}
+#controlContainer {
+  height: 15%;
+}

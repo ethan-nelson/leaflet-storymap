@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>A Leaflet Story Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" type="text/css" href="storymap.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="map"></div>
+    <div id="storyWrapper">
+      <div id="storyContainer"></div>
+      <div id="controlContainer">
+        <button id="goBackButton" onClick="goBack();">Previous</button>
+        <button id="goForwardButton" onClick="goForward();">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="storydata.geojson"></script>
+  <script src="storymap.js"></script>
+</body>
+</html>
