@@ -23,8 +23,8 @@ f.write('"features": [')
 for ll,l in enumerate(old):
     data = l.split(',')
     text = ''
-    for x in data[5:]:
-        text += x.strip('\n')
+    for ix,x in enumerate(data[5:]):
+        text += x+',' if ix != len(data[5:])-1 else x.strip('\n')
     f.write('{"type": "Feature", "properties": {')
     f.write('"id": %s, "title": %s, "zoom": %s, "text": %s},' % (data[0], data[1], data[4], text))
     f.write('"geometry": {"type": "Point", "coordinates": [%s, %s]}}' % (data[3], data[2]))
